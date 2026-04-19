@@ -1,0 +1,76 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+/* RESET GLOBAL: Membersihkan pengaturan bawaan browser */
+/* Paksa ukuran kotak tetap stabil (lebar tidak berubah meski ada padding/border) */
+/* Buang jarak luar bawaan browser supaya elemen bisa benar-benar mepet */
+/* Buang jarak dalam bawaan browser supaya kontrol penuh ada di kita */
+.container {
+  font-family: "Google Sans", sans-serif;
+  width: 100%; /*agar lebar web menyesuaikan layar*/
+}
+.header {
+  background-color: rgb(118, 84, 163);
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /*ini display flex nya bikin agar logo dan nav menu tidak ke bawah tapi ke samping*/
+}
+.logo img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin: 10px 20px;
+}
+.menu ul {
+  display: flex;
+  list-style: none; /*bikin biar list pada unordered list titik-titik nya ilang*/
+  margin-right: 50px;
+}
+.menu ul li {
+  margin: 0px 10px;
+}
+.menu ul li a {
+  color: white;
+  text-decoration: none; /*menghilangkan dekorasi garis dari anchor*/
+}
+.menu ul li a:hover {
+  color: red;
+}
+.judullogin {
+  width: 100%;
+  margin: 20px 0;
+  font-size: 30px;
+  text-align: center;
+}
+.form {
+  width: 100%;
+}
+.username {
+  margin-left: 34.7%;
+}
+.username p {
+  margin: 3px 0;
+}
+.username input {
+  margin: 10px 0;
+}
+.password {
+  margin-left: 34.7%;
+}
+.password p {
+  margin: 3px 0;
+}
+.password input {
+  margin: 10px 0;
+}
+footer {
+  text-align: center;
+  margin: 40px 0;
+}
+.clear {
+  clear: both;
+}
